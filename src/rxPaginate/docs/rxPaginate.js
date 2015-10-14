@@ -4,7 +4,8 @@ angular.module('demoApp')
                                         PageTracking, rxSortUtil, SelectFilter) {
     $scope.pager = PageTracking.createInstance({ itemsPerPage: 3 });
 
-    var os = ['Ubuntu 12.04', 'Red Hat Enterprise Linux 6.4', 'CentOS 6.4', 'Ubuntu 13.04'];
+    var os = ['Ubuntu 12.04', 'Red Hat Enterprise Linux 6.4', 'CentOS 6.4', 'Ubuntu 13.04',
+              'superlonglinevalue1superlonglinevalue2superlonglinevalue3superlonglinevalue4superlonglinevalue5superlonglinevalue6superlonglinevalue7superlonglinevalue8superlonglinevalue9'];
     var makeServers = function (serverCount) {
         var servers = [];
         for (var i = 1; i < serverCount + 1; i++) {
