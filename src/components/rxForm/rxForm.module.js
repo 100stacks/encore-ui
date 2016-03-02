@@ -43,7 +43,7 @@
  * * {@link atoms.directive:rxButton rxButton}
  * * {@link rxCharacterCount}
  * * {@link atoms.directive:rxCheckbox rxCheckbox}
- * * {@link rxMultiSelect}
+ * * {@link molecules.directive:rxMultiSelect rxMultiSelect}
  * * {@link rxOptionTable}
  * * {@link rxRadio}
  * * {@link rxSearchBox}

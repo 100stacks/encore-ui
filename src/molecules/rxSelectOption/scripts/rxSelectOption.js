@@ -1,10 +1,11 @@
-angular.module('encore.ui.rxMultiSelect')
+angular.module('encore.ui.molecules')
 /**
  * @ngdoc directive
- * @name rxMultiSelect.directive:rxSelectOption
+ * @name molecules.directive:rxSelectOption
  * @restrict E
+ * @requires atoms.directive:rxCheckbox
  * @description
- * A single option for use within rxMultiSelect.
+ * A single option for use within {@link molecules.directive:rxMultiSelect rxMultiSelect}.
  *
  * `<rx-select-option>` is to `<rx-multi-select>` as `<option>` is to `<select>`.
  *

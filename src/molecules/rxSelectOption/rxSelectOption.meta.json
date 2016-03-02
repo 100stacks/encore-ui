@@ -1,0 +1,7 @@
+{
+    "displayName": "rxSelectOption",
+    "stability": "experimental",
+    "description": "A single option for use within rxMultiSelect.",
+    "api": "directive:rxSelectOption",
+    "keywords": []
+}

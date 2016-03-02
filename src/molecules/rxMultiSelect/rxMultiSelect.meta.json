@@ -1,0 +1,7 @@
+{
+    "displayName": "rxMultiSelect",
+    "stability": "experimental",
+    "description": "This component is a multi-select dropdown with checkboxes for each option.",
+    "api": "directive:rxMultiSelect",
+    "keywords": []
+}

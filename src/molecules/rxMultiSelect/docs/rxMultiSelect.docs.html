@@ -1,0 +1,78 @@
+<div ng-controller="rxMultiSelectDemoCtrl">
+  <p>
+    This component is a multi-select dropdown with checkboxes for each option.
+  </p>
+
+  <rx-example name="rxMultiSelect.simple"></rx-example>
+
+  <h2>Molecule States</h2>
+  <p>
+    Below you'll find examples of how <code>rxMultiSelect</code> will appear in different states.
+  </p>
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Enabled</th>
+        <th>Disabled</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Valid -->
+      <tr>
+        <th>Valid</th>
+        <!-- Valid Enabled -->
+        <td>
+          <rx-multi-select
+            id="msValidEnabled"
+            ng-model="validEnabled">
+
+            <rx-select-option value="A">Type A</rx-select-option>
+            <rx-select-option value="B">Type B</rx-select-option>
+            <rx-select-option value="C">Type C</rx-select-option>
+            <rx-select-option value="D">Type D</rx-select-option>
+          </rx-multi-select>
+        </td>
+        <!-- Valid Disabled -->
+        <td>
+          <rx-multi-select
+            id="msValidDisabled"
+            ng-model="validDisabled"
+            ng-disabled="true">
+
+            <rx-select-option value="Not allowed">Not Allowed</rx-select-option>
+          </rx-multi-select>
+        </td>
+      </tr>
+      <!-- Invalid -->
+      <tr>
+        <th>Invalid</th>
+        <!-- Invalid Enabled -->
+        <td>
+          <rx-multi-select
+            id="msInvalidEnabled"
+            ng-model="invalidEnabled"
+            always-invalid>
+
+            <rx-select-option value="A">Type A</rx-select-option>
+            <rx-select-option value="B">Type B</rx-select-option>
+            <rx-select-option value="C">Type C</rx-select-option>
+            <rx-select-option value="D">Type D</rx-select-option>
+          </rx-multi-select>
+        </td>
+
+        <!-- Invalid Disabled -->
+        <td>
+          <rx-multi-select
+            id="msInvalidDisabled"
+            ng-model="invalidDisabled"
+            always-invalid
+            ng-disabled="true">
+
+            <rx-select-option value="Not allowed">Not Allowed</rx-select-option>
+          </rx-multi-select>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

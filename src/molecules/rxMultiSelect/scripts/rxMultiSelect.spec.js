@@ -12,7 +12,7 @@ describe('rxMultiSelect', function () {
     var optionsTemplate = '<rx-multi-select ng-model="types" options="options"></rx-multi-select>';
 
     beforeEach(function () {
-        module('encore.ui.rxMultiSelect');
+        module('encore.ui.molecules');
 
         module('templates/rxMultiSelect.html');
         module('templates/rxSelectOption.html');
@@ -61,9 +61,18 @@ describe('rxMultiSelect', function () {
             });
 
             it('does not toggle the visibility of the menu when a child element is clicked', function () {
-                angular.element(el[0].querySelector('rx-select-option')).click();
+                angular.element(el[0].querySelector('.menu')).click();
                 expect(isolateScope.listDisplayed).to.be.false;
             });
+
+            it('should close an open menu', function () {
+                var previewElement = angular.element(el[0].querySelector('.preview'));
+                previewElement.click();
+                expect(isolateScope.listDisplayed).to.be.true;
+
+                isolateScope.closeMenu();
+                expect(isolateScope.listDisplayed).to.be.false;
+             });
 
             describe('controller', function () {
                 var ctrl;
