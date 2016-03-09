@@ -183,6 +183,12 @@ angular.module('demoApp', ['encore.ui', 'ngRoute'])
                 { name: 'Tables' }
             ])
         })
+        .when('/atoms/text-input', {
+            templateUrl: 'templates/atoms/text-input.html',
+            controller: genericRouteController([
+                { name: 'Text Input' }
+            ])
+        })
         .when('/atoms/:atom', {
             templateUrl: 'templates/modules/showModule.html',
             controller: 'showModuleController',
@@ -344,6 +350,10 @@ angular.module('demoApp', ['encore.ui', 'ngRoute'])
                         {
                             linkText: 'Tables',
                             href: '#/atoms/tables'
+                        },
+                        {
+                            linkText: 'Text Input',
+                            href: '#/atoms/text-input'
                         }
                     ].concat(linksForModuleCategory('atoms'))
                 },
