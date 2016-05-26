@@ -114,7 +114,7 @@ describe('rxOptionTable', function () {
         });
 
         it('should unselect many rows', function () {
-            component.unselectMany([{ Name: 'Item 1' }, { Name: 'Item 2' }]);
+            component.deselectMany([{ Name: 'Item 1' }, { Name: 'Item 2' }]);
             expect(component.selections).to.eventually.be.empty;
         });
     });

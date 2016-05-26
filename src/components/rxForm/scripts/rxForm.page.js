@@ -188,5 +188,5 @@ exports.rxForm = {
             };
             return Page.create(rxFieldName);
         }
-    },
+    }
 };
